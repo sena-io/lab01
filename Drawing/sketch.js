@@ -1,12 +1,19 @@
 console.log("This is my amazing drawing");
 
 function setup() {
-  createCanvas(900, 900);
+  createCanvas(500, 500);
 }
 
 function draw() {
-  background(10);
-  fill(100, 100, 100);
-  circle(100, 100, 100);
-  circle(100, 100, 100);
+  background(40, 250, 255);
+  fill(255, 255, 255);
+  circle(250, 300, 150);
+  circle(250, 200, 100);
+  fill(255, 0, 0);
+  rect(193, 230, 113, 20, 2, 2, 2, 2);
+  fill(0, 0, 0);
+  circle(230, 195, 10);
+  circle(270, 195, 10);
+  fill(255, 255, 255);
+  arc(250, 210, 30, 20, 0, PI);
 }
