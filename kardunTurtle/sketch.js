@@ -12,7 +12,7 @@ async function setup() {
   const face = await loadImage("turtle.jpg");
 
   // Make a turtle near the bottom left, facing up.
-  turtle = new KardunTurtle(200, 420, face);
+  turtle = new KardunTurtle(400, 300, face);
 
   giveInstructions();
 }
@@ -39,6 +39,66 @@ function keyPressed() {
   if (key === "r" || key === "R") {
     turtle.reset();
     giveInstructions();
+    turtle.setSpeed(10);
+    turtle.left(35);
+    turtle.forward(100);
+    turtle.right(70);
+    turtle.forward(100);
+    turtle.right(110);
+    turtle.forward(100);
+    turtle.right(70);
+    turtle.forward(100);
+    //another petal
+    turtle.left(70);
+    turtle.forward(100);
+    turtle.right(70);
+    turtle.forward(100);
+    turtle.right(110);
+    turtle.forward(100);
+    turtle.right(70);
+    turtle.forward(100);
+    //another petal
+    turtle.right(20);
+    turtle.forward(100);
+    turtle.right(70);
+    turtle.forward(100);
+    turtle.right(110);
+    turtle.forward(100);
+    turtle.right(70);
+    turtle.forward(100);
+    //another petal
+    turtle.forward(100);
+    turtle.left(70);
+    turtle.forward(100);
+    turtle.left(110);
+    turtle.forward(100);
+    turtle.left(70);
+    turtle.forward(100);
+    //line
+    turtle.speed(4);
+    turtle.penUp();
+    turtle.goTo(490, 200);
+    turtle.penDown();
+    turtle.left(10);
+    turtle.forward(100);
+    //line 2
+    turtle.penUp();
+    turtle.goTo(490, 400);
+    turtle.penDown();
+    turtle.left(90);
+    turtle.forward(100);
+    //line 3
+    turtle.penUp();
+    turtle.goTo(310, 400);
+    turtle.penDown();
+    turtle.left(90);
+    turtle.forward(100);
+    //line 4
+    turtle.penUp();
+    turtle.goTo(310, 200);
+    turtle.penDown();
+    turtle.left(90);
+    turtle.forward(100);
   }
 }
 
