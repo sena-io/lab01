@@ -22,7 +22,7 @@ async function setup() {
 // ---------------------------------------------------------------
 
 function giveInstructions() {
-  turtle.penColor("#ff7a3c");
+  turtle.penColor("#B89AF2");
   turtle.penWidth(4);
 
   // Press a face onto the canvas, so we can see where we started.
@@ -75,8 +75,8 @@ function keyPressed() {
     turtle.left(70);
     turtle.forward(100);
     //line
-    turtle.speed(4);
     turtle.penUp();
+    turtle.penColor("#4DA0FF");
     turtle.goTo(490, 200);
     turtle.penDown();
     turtle.left(10);
@@ -85,20 +85,23 @@ function keyPressed() {
     turtle.penUp();
     turtle.goTo(490, 400);
     turtle.penDown();
-    turtle.left(90);
+    turtle.right(90);
     turtle.forward(100);
     //line 3
     turtle.penUp();
     turtle.goTo(310, 400);
     turtle.penDown();
-    turtle.left(90);
+    turtle.right(90);
     turtle.forward(100);
     //line 4
     turtle.penUp();
     turtle.goTo(310, 200);
     turtle.penDown();
-    turtle.left(90);
+    turtle.right(90);
     turtle.forward(100);
+    //turtle original position
+    turtle.penUp();
+    turtle.goTo(400, 300);
   }
 }
 
